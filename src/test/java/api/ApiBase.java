@@ -17,7 +17,7 @@ public class ApiBase {
             .addHeader("Access-Token", API_KEY)
             .build();
 
-    public Response getRequest(String endPoint, Integer responseCode, Object body) {
+    public Response getRequest(String endPoint, Integer responseCode) {
         Response response = RestAssured.given()
                 .spec(specification)
                 .when()
@@ -29,11 +29,11 @@ public class ApiBase {
         return response;
     }
 
-    public Response getRequestWithParam(String endPoint, Integer responseCode, int id) {
+    public Response getRequestWithParam(String endPoint, Integer responseCode, String paramName, int id) {
         Response response = RestAssured.given()
                 .spec(specification)
                 .when()
-                .pathParam("id", id)
+                .pathParam(paramName, id)
                 .log().all()
                 .get(endPoint)
                 .then().log().all()
