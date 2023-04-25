@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48580a39-a3d0-4d18-b5ef-9017670f8fcf" name="Changes" comment="Added new files at 24.04.2023">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/contact/ContactApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/contact/ContactApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/email/EmailsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/email/EmailsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +83,7 @@
       <recent name="C:\Users\bande\IdeaProjects\phonebookApi\src\test\java\api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CommonContactTest.createEditDeleteNewContact (1)">
+  <component name="RunManager" selected="TestNG.CommonContactPhoneTest.createEditDeleteContactPhoneTest">
     <configuration name="CommonContactEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebookApi.test" />
       <extension name="coverage">
@@ -106,6 +112,24 @@
       <option name="PACKAGE_NAME" value="api.tests" />
       <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactEmailTest" />
       <option name="METHOD_NAME" value="createEditDeleteContactEmailTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonContactPhoneTest.createEditDeleteContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="phonebookApi.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactPhoneTest" />
+      <option name="METHOD_NAME" value="createEditDeleteContactPhoneTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,31 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonContactTest.createEditDeleteNewContact" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="phonebookApi.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.tests" />
-      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactTest" />
-      <option name="METHOD_NAME" value="createEditDeleteNewContact" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CommonContactPhoneTest.createEditDeleteContactPhoneTest" />
         <item itemvalue="TestNG.CommonContactTest.createEditDeleteNewContact (1)" />
+        <item itemvalue="TestNG.CommonContactEmailTest.createEditDeleteContactEmailTest" />
         <item itemvalue="TestNG.CommonContactEmailTest" />
         <item itemvalue="TestNG.CommonContactTest" />
-        <item itemvalue="TestNG.CommonContactEmailTest.createEditDeleteContactEmailTest" />
-        <item itemvalue="TestNG.CommonContactTest.createEditDeleteNewContact" />
       </list>
     </recent_temporary>
   </component>

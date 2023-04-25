@@ -12,15 +12,15 @@ public class PhoneApi extends ApiBase {
         dto = new PhoneDto();
         dto.setCountryCode("+49");
         dto.setPhoneNumber("9878765675");
-        dto.setContactId(4909);
+        dto.setContactId(4981);
         return dto;
     }
 
-    public PhoneDto randomDataBodyForEditePhone(Integer phoneId) {
+    public PhoneDto randomDataBodyForEditPhone(Integer phoneId) {
         dto = new PhoneDto();
         dto.setCountryCode("+41");
         dto.setPhoneNumber("1234765675");
-        dto.setContactId(4909);
+        dto.setContactId(4981);
         dto.setId(phoneId);
         return dto;
     }
@@ -32,7 +32,7 @@ public class PhoneApi extends ApiBase {
 
     public void editExistingPhone(Integer code, int phoneId) {
         String endpoint = "/api/phone";
-        putRequest(endpoint, code, randomDataBodyForEditePhone(phoneId));
+        putRequest(endpoint, code, randomDataBodyForEditPhone(phoneId));
     }
 
     public void deleteExistingPhone(Integer code, int phoneId) {
@@ -42,13 +42,14 @@ public class PhoneApi extends ApiBase {
 
     public Response getAllPhones(Integer code) {
         String endpoint = "/api/phone/{contactId}/all";
-        response = getRequestWithParam(endpoint, code, "contactId", 4909);
+        response = getRequestWithParam(endpoint, code, "contactId", 4981);
         return response;
     }
 
     public Response getPhone(Integer code, int phoneId) {
         String endpoint = "/api/phone/{Id}";
         response = getRequestWithParam(endpoint, code, "id", phoneId);
+        //response.as(PhoneDto.class);
         return response;
     }
 }

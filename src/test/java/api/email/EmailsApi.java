@@ -11,15 +11,15 @@ public class EmailsApi extends ApiBase {
 
     public EmailDto randomDataBodyForCreateEmail() {
         dto = new EmailDto();
-        dto.setEmail("leo@gmail.com");
-        dto.setContactId(4909);
+        dto.setEmail("11111@gmail.com");
+        dto.setContactId(4981);
         return dto;
     }
 
     public EmailDto randomDataBodyForEditEmail(Integer emailId) {
         dto = new EmailDto();
-        dto.setEmail("leo123@gmail.com");
-        dto.setContactId(4909);
+        dto.setEmail("22222@gmail.com");
+        dto.setContactId(4981);
         dto.setId(emailId);
         return dto;
     }
@@ -41,7 +41,7 @@ public class EmailsApi extends ApiBase {
 
     public Response getAllEmails(Integer code) {
         String endpoint = "/api/email/{contactId}/all";
-        response = getRequestWithParam(endpoint, code, "contactId", 4909);
+        response = getRequestWithParam(endpoint, code, "contactId", 4981);
         return response;
     }
 
