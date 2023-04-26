@@ -18,17 +18,15 @@ public class CommonContactPhoneTest extends PhoneApi {
         Assert.assertEquals(phoneNumber, randomDataBodyForCreatePhone().getPhoneNumber(), "Created phoneNumber is not equals");
 
         editExistingPhone(200, phoneId);
-        //getPhone(200, phoneId);
-        Response editedCountryCodes = getAllPhones(200);
-        Response editedPhoneNumbers = getAllPhones(200);
-        String editedCountryCode = editedCountryCodes.jsonPath().getString("[0].countryCode");
-        String editedPhoneNumber = editedPhoneNumbers.jsonPath().getString("[0].phoneNumber");
+        Response editedPhoneResponse = getAllPhones(200);
+        String editedCountryCode = editedPhoneResponse.jsonPath().getString("[0].countryCode");
+        String editedPhoneNumber = editedPhoneResponse.jsonPath().getString("[0].phoneNumber");
+
         Assert.assertEquals(editedCountryCode, randomDataBodyForEditPhone(phoneId).getCountryCode(), "Edited countryCode is not equals");
         Assert.assertEquals(editedPhoneNumber, randomDataBodyForEditPhone(phoneId).getPhoneNumber(), "Edited phoneNumber is not equals");
 
         deleteExistingPhone(200, phoneId);
         Response errorMessage = getPhone(500, phoneId);
-        Assert.assertEquals(errorMessage.jsonPath().getString("message"), "Error! This phone doesn't exist in our DB");
-
+        Assert.assertEquals(errorMessage.jsonPath().getString("message"), "Error! This phone number doesn't exist in our DB");
     }
 }

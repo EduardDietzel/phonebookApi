@@ -47,9 +47,8 @@ public class PhoneApi extends ApiBase {
     }
 
     public Response getPhone(Integer code, int phoneId) {
-        String endpoint = "/api/phone/{Id}";
+        String endpoint = "/api/phone/{id}";
         response = getRequestWithParam(endpoint, code, "id", phoneId);
-        //response.as(PhoneDto.class);
         return response;
     }
 }
