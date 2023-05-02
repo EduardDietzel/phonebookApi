@@ -1,11 +1,14 @@
 package api.tests;
 
 import api.address.AddressesApi;
+import api.helpers.AddressHelper;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CommonContactAddressTest extends AddressesApi {
+
+    AddressHelper addressHelper = new AddressHelper();
 
     @Test
     public void createEditDeleteContactAddressTest() {
@@ -32,9 +35,7 @@ public class CommonContactAddressTest extends AddressesApi {
         Assert.assertEquals(editedStreet, randomDataBodyForEditAddress(addressId).getStreet(), "Edited street is not equals");
         Assert.assertEquals(editedZip, randomDataBodyForEditAddress(addressId).getZip(), "Edited zip is not equals");
 
-        deleteExistingAddress(200, addressId);
-        Response errorMessage = getAddress(500, addressId);
-        Assert.assertEquals(errorMessage.jsonPath().getString("message"), "Error! This address doesn't exist in our DB");
+        addressHelper.deleteAddress(addressId);
 
     }
 }
