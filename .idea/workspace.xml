@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48580a39-a3d0-4d18-b5ef-9017670f8fcf" name="Changes" comment="fixed a few files at 25.04.2023">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/helpers/ContactHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/helpers/EmailHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/CreateEmailForNewContactTest.java" afterDir="false" />
+    <list default="true" id="48580a39-a3d0-4d18-b5ef-9017670f8fcf" name="Changes" comment="New files and change CommonContactEmailTest at 26.04.2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/email/EmailsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/email/EmailsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactEmailTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/address/AddressesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/address/AddressesApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,24 +63,42 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bande/IdeaProjects/phonebookApi/src/test/java/api&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/bande/IdeaProjects/phonebookApi/src/test/java/api",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bande\IdeaProjects\phonebookApi\src\test\java\api" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CommonContactPhoneTest.createEditDeleteContactPhoneTest">
+  <component name="RunManager" selected="TestNG.CommonContactAddressTest.createEditDeleteContactAddressTest">
+    <configuration name="CommonContactAddressTest.createEditDeleteContactAddressTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="phonebookApi.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactAddressTest" />
+      <option name="METHOD_NAME" value="createEditDeleteContactAddressTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommonContactEmailTest.createEditDeleteContactEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebookApi.test" />
       <extension name="coverage">
@@ -138,24 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonContactTest.createEditDeleteNewContact (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="phonebookApi.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.tests" />
-      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactTest" />
-      <option name="METHOD_NAME" value="createEditDeleteNewContact" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CreateEmailForNewContactTest.CreateEmailForNewContact" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebookApi.test" />
       <extension name="coverage">
@@ -176,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CommonContactAddressTest.createEditDeleteContactAddressTest" />
         <item itemvalue="TestNG.CommonContactPhoneTest.createEditDeleteContactPhoneTest" />
         <item itemvalue="TestNG.CommonContactEmailTest.createEditDeleteContactEmailTest" />
         <item itemvalue="TestNG.CreateEmailForNewContactTest.CreateEmailForNewContact" />
         <item itemvalue="TestNG.CommonContactPhoneTest" />
-        <item itemvalue="TestNG.CommonContactTest.createEditDeleteNewContact (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682458801690</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed CommonContactPhoneTest and PhoneApi at 26.04.2023">
+      <created>1682538333830</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538333830</updated>
+    </task>
+    <task id="LOCAL-00006" summary="New files and change CommonContactEmailTest at 26.04.2023">
+      <created>1682538616255</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538616255</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,7 +250,9 @@
     <MESSAGE value="Redaction ApiBase, ContactApi, CommonContactTest at 21.04.2023" />
     <MESSAGE value="Added new files at 24.04.2023" />
     <MESSAGE value="fixed a few files at 25.04.2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a few files at 25.04.2023" />
+    <MESSAGE value="fixed CommonContactPhoneTest and PhoneApi at 26.04.2023" />
+    <MESSAGE value="New files and change CommonContactEmailTest at 26.04.2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="New files and change CommonContactEmailTest at 26.04.2023" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
