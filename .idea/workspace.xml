@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48580a39-a3d0-4d18-b5ef-9017670f8fcf" name="Changes" comment="New files AddressesApi, CommonContactAddressTest at 2.05.2023">
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/helpers/AddressHelper.java" afterDir="false" />
+    <list default="true" id="48580a39-a3d0-4d18-b5ef-9017670f8fcf" name="Changes" comment="New files AddressHelper, fix CommonContactAddressTest at 2.05.2023">
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/helpers/PhoneHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/address/AddressesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/address/AddressesApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/helpers/AddressHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/helpers/AddressHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/helpers/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/helpers/ContactHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/helpers/EmailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/helpers/EmailHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/phone/PhoneApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactEmailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactPhoneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CommonContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/CreateEmailForNewContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/CreateEmailForNewContactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +80,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/bande/IdeaProjects/phonebookApi/src/test/java/api",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -116,23 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="phonebookApi.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="api.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api.tests" />
-      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactPhoneTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CommonContactPhoneTest.createEditDeleteContactPhoneTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="phonebookApi.test" />
       <extension name="coverage">
@@ -144,6 +136,24 @@
       <option name="PACKAGE_NAME" value="api.tests" />
       <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactPhoneTest" />
       <option name="METHOD_NAME" value="createEditDeleteContactPhoneTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonContactTest.createEditDeleteNewContact" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="phonebookApi.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="api.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="api.tests" />
+      <option name="MAIN_CLASS_NAME" value="api.tests.CommonContactTest" />
+      <option name="METHOD_NAME" value="createEditDeleteNewContact" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,8 +184,8 @@
         <item itemvalue="TestNG.CommonContactAddressTest.createEditDeleteContactAddressTest" />
         <item itemvalue="TestNG.CommonContactPhoneTest.createEditDeleteContactPhoneTest" />
         <item itemvalue="TestNG.CommonContactEmailTest.createEditDeleteContactEmailTest" />
+        <item itemvalue="TestNG.CommonContactTest.createEditDeleteNewContact" />
         <item itemvalue="TestNG.CreateEmailForNewContactTest.CreateEmailForNewContact" />
-        <item itemvalue="TestNG.CommonContactPhoneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683065239468</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="New files AddressHelper, fix CommonContactAddressTest at 2.05.2023">
+      <created>1683066255398</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683066255398</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +276,8 @@
     <MESSAGE value="fixed CommonContactPhoneTest and PhoneApi at 26.04.2023" />
     <MESSAGE value="New files and change CommonContactEmailTest at 26.04.2023" />
     <MESSAGE value="New files AddressesApi, CommonContactAddressTest at 2.05.2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="New files AddressesApi, CommonContactAddressTest at 2.05.2023" />
+    <MESSAGE value="New files AddressHelper, fix CommonContactAddressTest at 2.05.2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="New files AddressHelper, fix CommonContactAddressTest at 2.05.2023" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

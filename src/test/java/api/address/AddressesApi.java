@@ -8,35 +8,35 @@ public class AddressesApi extends ApiBase {
     Response response;
     AddressesDto dto;
 
-    public AddressesDto randomDataBodyForCreateAddress() {
+    public AddressesDto randomDataBodyForCreateAddress(Integer contactId) {
         dto = new AddressesDto();
         dto.setCity("Berlin");
         dto.setCountry("Germany");
         dto.setStreet("Manteuffelstraße 69");
         dto.setZip("10999");
-        dto.setContactId(4981);
+        dto.setContactId(contactId); // 4981
         return dto;
     }
 
-    public AddressesDto randomDataBodyForEditAddress(Integer addressId) {
+    public AddressesDto randomDataBodyForEditAddress(Integer addressId, Integer contactId) {
         dto = new AddressesDto();
         dto.setCity("Berlin");
         dto.setCountry("Germany");
         dto.setStreet("Hohenstaufenstraße 9");
         dto.setZip("10781");
-        dto.setContactId(4981);
+        dto.setContactId(contactId);// 4981
         dto.setId(addressId);
         return dto;
     }
 
-    public void createAddress(Integer code) {
+    public void createAddress(Integer code, Integer contactId) {
         String endpoint = "/api/address";
-        postRequest(endpoint, code, randomDataBodyForCreateAddress());
+        postRequest(endpoint, code, randomDataBodyForCreateAddress(contactId));
     }
 
-    public void editExistingAddress(Integer code, int addressId) {
+    public void editExistingAddress(Integer code, int addressId, Integer contactId) {
         String endpoint = "/api/address";
-        putRequest(endpoint, code, randomDataBodyForEditAddress(addressId));
+        putRequest(endpoint, code, randomDataBodyForEditAddress(addressId, contactId));
     }
 
     public void deleteExistingAddress(Integer code, int addressId) {
@@ -44,9 +44,9 @@ public class AddressesApi extends ApiBase {
         deleteRequest(endpoint, code, addressId);
     }
 
-    public Response getAllAddresses(Integer code) {
+    public Response getAllAddresses(Integer code, Integer contactId) {
         String endpoint = "/api/address/{contactId}/all";
-        response = getRequestWithParam(endpoint, code, "contactId", 4981);
+        response = getRequestWithParam(endpoint, code, "contactId", contactId); // 4981
         return response;
     }
 
